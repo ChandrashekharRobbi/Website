@@ -1,5 +1,5 @@
 let script = document.currentScript
-
+console.log("I am index.js");
 window.addEventListener("DOMContentLoaded",() => {
     let iDiv = document.createElement('div');
     iDiv.id = 'cursor';
