@@ -1,5 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -104,6 +105,14 @@ body.dark-theme {
     padding: 0;
     margin: 0;
     cursor: none !important; 
+}
+
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url(8.gif) no-repeat center;
+    z-index: 9999999;
 }
 
 html {
@@ -273,6 +282,9 @@ img {
 }
 
 /*==================== HOME ====================*/
+.Title-page-name{
+    font-family: Caveat;
+}
 .home__container {
     gap: 1rem;
 }
@@ -532,16 +544,16 @@ img {
     width: 90%;
 }
 
-.skills__php {
+.skills__pandas{
     width: 80%;
 }
 
-.skills__node {
+.skills__numpy{
     width: 70%;
 }
 
-.skills__firebase {
-    width: 90%;
+.skills__sklearn{
+    width: 80%;
 }
 
 .skills__close .skills__list {
