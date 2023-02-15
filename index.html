@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/cursor.css" />
-    <script src="assets/js/cursor.js" color="hsl(var(--hue-color), 19%, 61%)" circle-outline="disable"
-        difference="disable" size="60"></script>
+    <script src="assets/js/cursor.js" color="hsl(var(--hue-color), 19%, 61%)" circle-outline="disable" difference="disable" size="60"></script>
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -923,40 +922,46 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form name="contact-us" action="https://formspree.io/f/xgebabob" method="POST"  class="contact__form grid" >
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">
                                 Name
                             </label>
-                            <input type="text" class="contact__input">
+                            <input type="text" class="contact__input" name="name">
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">
                                 Email
                             </label>
-                            <input type="email" class="contact__input">
+                            <input type="email" class="contact__input" name="email">
                         </div>
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">
                             Project
                         </label>
-                        <input type="text" class="contact__input">
+                        <input type="text" class="contact__input" name="project">
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">
                             Message
                         </label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input" name="message"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
-                            Send Message
-                            <i class="uil uil-message button__icon"></i>
+                        
+                        <a href="#" class="">
+                            
+                            <button type="submit" class="button button--flex button--submit">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </button>
+                            
+                            
                         </a>
                     </div>
                 </form>
@@ -1029,6 +1034,7 @@
         });
 
     </script>
+    
 </body>
 
 </html>
