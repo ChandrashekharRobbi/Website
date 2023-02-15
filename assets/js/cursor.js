@@ -1,7 +1,10 @@
 let script = document.currentScript
-window.addEventListener("DOMContentLoaded",() => {
+window.addEventListener("DOMContentLoaded",() => { 
+
     let iDiv = document.createElement('div');
     iDiv.id = 'cursor';
+     
+    
     if(script.getAttribute("difference") == "disable"){
         iDiv.className = 'mscursor-cursor';
     } else {
