@@ -1,3 +1,9 @@
+/*==============  Preloader  ===========================*/
+
+var loader = document.getElementById('loader');
+window.addEventListener ("load", function() {
+    loader.style.display = 'none';
+});
 
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),

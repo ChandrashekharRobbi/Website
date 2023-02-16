@@ -64,3 +64,9 @@
   .mscursor-nocursor{
     cursor:none!important;
   }
+
+  @media screen and (max-width: 1000px){
+    .mscursor-cursor {
+      display: none; 
+    }
+  }

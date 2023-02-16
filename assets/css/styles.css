@@ -928,10 +928,6 @@ img {
     padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
-.contact__button{
-
-}
-
 .contact__label {
     font-size: var(--smaller-font-size);
     color: var(--title-color);

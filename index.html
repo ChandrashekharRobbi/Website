@@ -922,7 +922,7 @@
                     </div>
                 </div>
 
-                <form name="contact-us" action="https://formspree.io/f/xgebabob" method="POST"  class="contact__form grid" >
+                <!-- <form name="contact-us" id="myform" action="https://formspree.io/f/xgebabob"  method="POST"  class="contact__form grid" >
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">
@@ -949,7 +949,7 @@
                         <label for="" class="contact__label">
                             Message
                         </label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input" name="message"></textarea>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__input" name="message"></textarea>
                     </div>
 
                     <div>
@@ -964,6 +964,48 @@
                             
                         </a>
                     </div>
+                </form> -->
+                <form name="submit-to-google-sheet" id="myform"   method="POST"  class="contact__form grid" >
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">
+                                Name
+                            </label>
+                            <input type="text" class="contact__input" name="name" required>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">
+                                Email
+                            </label>
+                            <input type="email" class="contact__input" name="email" required>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">
+                            Project
+                        </label>
+                        <input type="text" class="contact__input" name="project" required>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">
+                            Message
+                        </label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__input" name="message"></textarea>
+                    </div>
+
+                    <div>
+                        
+                        <a href="#" class="">
+                            
+                            <button type="submit" class="button button--flex button--submit">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </button>  
+                        </a>
+                    </div>
+                    <span id="contact-reply"></span>
                 </form>
             </div>
         </section>
@@ -1024,16 +1066,8 @@
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
 
-
-    <script>
-
-        var loader = document.getElementById('loader');
-
-        window.addEventListener ("load", function() {
-            loader.style.display = 'none';
-        });
-
-    </script>
+    <!--==================== Contact JS ====================-->
+    <script type="module" src="assets/js/contact.js" ></script>
     
 </body>
 
