@@ -68,5 +68,6 @@
   @media screen and (max-width: 1000px){
     .mscursor-cursor {
       display: none; 
+      cursor: pointer !important;
     }
   }
