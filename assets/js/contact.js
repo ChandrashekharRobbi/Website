@@ -3,15 +3,7 @@ const form = document.forms['submit-to-google-sheet'];
 const msg = document.getElementById('contact-reply');
 form.addEventListener('submit', async e => {
     e.preventDefault();
-    async function postData(form) {
-        const response = await fetch(scriptURL, { method: 'POST', body: new FormData(form) });
-        const data = await response.json();
-        return data;
-      }
-      
-      // Call the function and wait for the response
-      const data = await postData(form);
-    //   console.log(data);
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     msg.innerHTML = "Thank you! I will be in touch with you soon.✌🏻";
     document.getElementById("myform").reset();
 });
