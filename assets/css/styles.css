@@ -886,6 +886,9 @@ img {
 }
 
 /*==================== CONTACT ME ====================*/
+.contact__adblock{
+    font-size: 10px;
+}
 .contact__container {
     row-gap: 3rem;
 }
