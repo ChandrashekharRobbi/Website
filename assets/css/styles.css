@@ -243,6 +243,8 @@ img {
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
+    /* padding: 10px 15px;  Adds padding to make it look spacious */
+    transition: color 0.3s ease;
 }
 
 .nav__link:hover {
@@ -251,6 +253,7 @@ img {
 
 .nav__icon {
     font-size: 1.2rem;
+    margin-right: 10px;  
 }
 
 .nav__close {
@@ -280,6 +283,8 @@ img {
 .scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
+
+
 
 /*==================== HOME ====================*/
 .Title-page-name{
@@ -387,6 +392,31 @@ img {
     margin-left: var(--mb-0-5);
     transition: 0.3s;
 }
+.github-button{
+    display: inline-block;
+    background-color: #0d1117;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    border: 2px solid white;
+}
+
+.github_icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+}
+
+.services__button:hover .github_icon {
+    transform: translateX(0.25rem);
+}
+
+
+.portfolio__button:hover .github_icon {
+    transform: translateX(0.25rem);
+}
+
 
 .button--flex {
     display: inline-flex;
@@ -463,6 +493,72 @@ img {
     display: flex;
     justify-content: center;
 }
+
+/* side panel */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+}
+
+.modal__content {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: var(--input-color);
+    border-radius: 8px;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#close-modal-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Style for the ul containing the roles */
+.modal__list {
+    padding: 10px 0;  /* Top and bottom padding */
+    list-style-type: none; /* Removes bullet points */
+}
+
+/* Style for each role */
+.modal__list li {
+    margin-bottom: 10px;  /* Adds spacing between each role */
+}
+
+.modal__list li:last-child {
+    margin-bottom: 0;  /* Removes margin from the last item to avoid extra spacing at the bottom */
+}
+
+.modal__list a {
+    text-decoration: none;  /* Removes underline */
+    background-color: var(--first-color);  /* Use your primary color or any color of your choice */
+    padding: 10px 15px;  /* Adds padding to make it look like a button */
+    border-radius: 5px;  /* Rounds the corners for a softer appearance */
+    color: #fff;  /* Text color; white in this case */
+    display: inline-block;  /* Allows for width, margin, and padding adjustments */
+    transition: background-color 0.3s ease;  /* Smoothens the hover effect */
+}
+
+.modal__list a:hover {
+    background-color: var(--first-color-alt);  /* Darken version of your primary color */
+}
+
+
 
 /*==================== SKILLS ====================*/
 .skills__container {
@@ -555,6 +651,14 @@ img {
     width: 80%;
 }
 
+.skills__flask{
+    width: 30%;
+}
+
+.skills__django{
+    width: 30%;
+}
+
 .skills__numpy{
     width: 70%;
 }
@@ -573,13 +677,17 @@ img {
 
 .skills__close .skills__list {
     height: 0;
+    transition: 0.4s;
     overflow: hidden;
 }
 
 .skills__open .skills__list {
+    transition: 0.4s;
     height: max-content;
     margin-bottom: var(--mb-2-5);
+
 }
+
 
 .skills__open .skills__arrow {
     transform: rotate(-180deg);

@@ -85,7 +85,7 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/chandrashekar-robbi-59bb4a197/" target="_blank"
+                        <a href="www.linkedin.com/in/chandrashekharrobbi" target="_blank"
                             class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
@@ -97,13 +97,14 @@
                         </a>
                     </div>
                     <div class="home__img">
-                        <image class="home__blob-img"
-                            src="assets/img/chandu_a_passionate_developer_who_is_greeting_client_and_has_sk (3).png" />
+                        <img class="home__blob-img" src="assets/img/chandu_a_passionate_developer_who_is_greeting_client_and_has_sk (3).png" />
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">Hi, I'am <span class="Title-page-name">Chandrashekhar</span></h1>
-                        <h3 class="home__subtitle">Student</h3>
-                        <p class="home__description">Learning Machine Learning and Deep Learning from past 2 years.</p>
+                        <!-- <h3 class="home__subtitle">Student</h3> -->
+                        <br>
+                        <!-- <br> -->
+                        <p class="home__description">A dedicated Computer Science Engineering student with a strong foundation in Python development and data science.</p>
                         <a href="#contact" class="button button--flex">
                             Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
@@ -129,12 +130,9 @@
                     class="about__img">
                 <div class="about__data">
                     <p class="about__description">
-                        Highly motivated and dedicated CSE (AIML) engineering student at Mumbai University with a strong passion
-                        for machine learning, deep learning, and Python programming. Proficient in various tools such as TensorFlow,
-                        Pandas, NumPy, and Matplotlib.Experienced in web scraping techniques and data analysis.Demonstrated interest in
-                        teaching and sharing knowledge in the field. Committed to continuous learning and staying updated with the latest
-                        advancements in AI and ML. Seeking opportunities to contribute to cutting-edge projects and make a positive impact
-                        in the field of artificial intelligence.
+                        Final-year CSE (AIML) student at Mumbai University. I love machine learning, deep learning, and coding in Python. 
+                        Good with tools like TensorFlow, Pandas, NumPy, Matplotlib, Streamlit, Flask, and SQL. I've done web scraping and data analysis projects. 
+                        Enjoy teaching what I've learned. I'm always looking to learn more about AI and ML, and I'm eager to work on projects that push the boundaries in Artificial Intelligence.
                     </p>
                     <!-- <div class="about__info"> -->
                     <!-- <div>
@@ -152,13 +150,33 @@
                     <!-- </div> -->
                     <div class="about__buttons">
                         <a download="" href="assets/pdf/Chandrashekhar_Robbi (1).pdf"
-                            class="button button--flex">
+                            class="button button--flex download-button">
                             Download CV<i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
+                    
+                    
                 </div>
             </div>
         </section>
+
+        <!-- Start of Modal HTML -->
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3>Select Role</h3>
+                    <button id="close-modal-btn">&times;</button>
+                </div>
+                <ul class="modal__list">
+                    <li><a href="assets/pdf/Chandrashekhar_Robbi_Python_Developer (1).pdf" download>Role : Python Developer</a></li>
+                    <li><a href="assets/pdf/Chandrashekhar_Robbi (9).pdf" download>Role : Data Science or AIML</a></li>
+                    <li><a href="assets/pdf/Chandrashekhar_Robbi_Data_Analyst.pdf" download>Role : Data Analytics</a></li>
+                    <!-- Add more roles as needed -->
+                </ul>
+            </div>
+        </div>
+        <!-- End of Modal HTML -->
+
 
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
@@ -186,7 +204,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Classification</h3>
-                                    <span class="skills__number">90%</span>
+                                    <!-- <span class="skills__number">90%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__classification"></span>
@@ -196,7 +214,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Regression</h3>
-                                    <span class="skills__number">80%</span>
+                                    <!-- <span class="skills__number">80%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__regression"></span>
@@ -226,7 +244,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Tensorflow</h3>
-                                    <span class="skills__number">80%</span>
+                                    <!-- <span class="skills__number">80%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__CNN"></span>
@@ -254,7 +272,34 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Computer Vision</h3>
-                                    <span class="skills__number">70%</span>
+                                    <!-- <span class="skills__number">70%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__CNN"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- SKills 3-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-database skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">
+                                    DataBase
+                                </h1>
+                                <!-- <span class="skills__subtitle">More than 4 years</span> -->
+
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <!-- <span class="skills__number">70%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__CNN"></span>
@@ -284,7 +329,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Tableau</h3>
-                                    <span class="skills__number">90%</span>
+                                    <!-- <span class="skills__number">90%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__tableau"></span>
@@ -298,7 +343,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Matplotlib</h3>
-                                    <span class="skills__number">90%</span>
+                                    <!-- <span class="skills__number">90%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__tableau"></span>
@@ -328,7 +373,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Beautiful Soup</h3>
-                                    <span class="skills__number">80%</span>
+                                    <!-- <span class="skills__number">80%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__soup"></span>
@@ -342,7 +387,7 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Selenium</h3>
-                                    <span class="skills__number">70%</span>
+                                    <!-- <span class="skills__number">70%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__selenium"></span>
@@ -360,7 +405,7 @@
 
                             <div>
                                 <h1 class="skills__titles">
-                                    Python Libraries
+                                    Model Deployement
                                 </h1>
                                 <!-- <span class="skills__subtitle">More than 4 years</span> -->
 
@@ -371,8 +416,8 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Pandas</h3>
-                                    <span class="skills__number">80%</span>
+                                    <h3 class="skills__name">Hugging Face Spaces</h3>
+                                    <!-- <span class="skills__number">80%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__pandas"></span>
@@ -385,8 +430,8 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Numpy</h3>
-                                    <span class="skills__number">70%</span>
+                                    <h3 class="skills__name">Streamlit</h3>
+                                    <!-- <span class="skills__number">70%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__numpy"></span>
@@ -399,13 +444,61 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Scikit Learn</h3>
-                                    <span class="skills__number">80%</span>
+                                    <h3 class="skills__name">Gradio</h3>
+                                    <!-- <span class="skills__number">80%</span> -->
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__sklearn"></span>
                                 </div>
                             </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- SKills 5-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            
+                            <i class="uil uil-window skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__titles">
+                                    Python Web Framework
+                                </h1>
+                                <!-- <span class="skills__subtitle">More than 4 years</span> -->
+
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Flask</h3>
+                                    <!-- <span class="skills__number">80%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__flask"></span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Django</h3>
+                                    <!-- <span class="skills__number">70%</span> -->
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__django"></span>
+                                </div>
+                            </div>
+
+
+                        </div>
 
 
                         </div>
@@ -440,9 +533,9 @@
                 </div>
 
                 <div class="qualification__sections">
-                    <!--==================== QUALIFICATION CONTENT 1====================-->
+                    <!--==================== Academic Education CONTENT 1====================-->
                     <div class="qualification__content qualification__active" data-content id="education">
-                        <!--==================== QUALIFICATION 1====================-->
+                        <!--==================== Academic 1====================-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">
@@ -461,7 +554,7 @@
                             </div>
                         </div>
 
-                        <!--==================== QUALIFICATION 2====================-->
+                        <!--==================== Academic 2====================-->
                         <div class="qualification__data">
                             <div></div>
 
@@ -482,7 +575,7 @@
                             </div>
                         </div>
 
-                        <!--==================== QUALIFICATION 3====================-->
+                        <!--==================== Academic 3====================-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">
@@ -524,9 +617,9 @@
                         </div> -->
                     </div>
 
-                    <!--==================== QUALIFICATION CONTENT 2====================-->
-                    <div class="qualification__content" data-content id="self">
-                        <!--==================== QUALIFICATION 1====================-->
+                    <!--==================== COURSES ====================-->
+                    <div class="qualification__content " data-content id="self">
+                        <!--==================== COURSES 1====================-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">
@@ -545,7 +638,7 @@
                             </div>
                         </div>
 
-                        <!--==================== QUALIFICATION 2====================-->
+                        <!--==================== COURSES 2====================-->
                         <div class="qualification__data">
                             <div></div>
 
@@ -566,7 +659,7 @@
                             </div>
                         </div>
 
-                        <!--==================== QUALIFICATION 3====================-->
+                        <!--==================== COURSES 3====================-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">
@@ -585,7 +678,7 @@
                             </div>
                         </div>
 
-                        <!--==================== QUALIFICATION 4====================-->
+                        <!--==================== COURSES 4====================-->
                         <div class="qualification__data">
                             <div></div>
 
@@ -605,7 +698,7 @@
                             </div>
 
                         </div>
-                        <!--==================== QUALIFICATION 3====================-->
+                        <!--==================== COURSES 5====================-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">
@@ -614,19 +707,39 @@
                                 <span class="qualification__subtitle">Udemy - instructor : Mr. Colt Steele</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2023 - Present
+                                    2023
                                 </div>
                             </div>
 
                             <div>
                                 <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
+                                <span class="qualification__line"></span>
                             </div>
                         </div>
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <!-- <span class="qualification__line"></span> -->
+                                <span class="qualification__rounder"></span>
+                                
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">
+                                    Django Web Framework
+                                </h3>
+                                <span class="qualification__subtitle"> Coursera</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Present
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <!-- Qualifucation Content 3  -->
+                    <!-- WORK  -->
                     <div class="qualification__content" data-content id="work">
-                        <!--==================== QUALIFICATION 1====================-->
+                        <!--==================== WORK 1====================-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">
@@ -645,7 +758,7 @@
                             </div>
                         </div>
 
-                        <!--==================== QUALIFICATION 2====================-->
+                        <!--==================== WORK 2====================-->
                         <div class="qualification__data">
                             <div></div>
 
@@ -826,20 +939,26 @@
                 <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO 1 ====================-->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/lipnet.jpg"
+                        <img src="assets/img/LipNet.png"
                             alt="" class="Lipnet_img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">LipNet</h3>
                             <p class="portfolio__description">LipNet is a deep learning model that aims to perform visual speech recognition by interpreting lip movements.
-                                The model combines convolutional neural networks (CNNs) and recurrent neural networks (RNNs) to analyze and understand the visual information provided by lip
+                                The model combines convolutional neural networks (CNNs)  to analyze and understand the visual information provided by lip
                                 movements during speech.
                             </p>
                             <a href="https://github.com/ChandrashekharRobbi/LipNet"
+                                target="_blank" class="github-button button--flex button--small portfolio__button">
+                                Github Repo
+                                <i class="uil uil-github-alt github_icon"></i>
+                            </a>
+                            <a href="https://huggingface.co/spaces/crobbi/LipNet"
                                 target="_blank" class="button button--flex button--small portfolio__button">
-                                More Details
+                                Live Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
+                            
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 2 ====================-->
@@ -854,13 +973,31 @@
                                 the highest accuracy of 95.53%.
                             </p>
                             <a href="https://github.com/ChandrashekharRobbi/Convolutional-Neural-Network-with-Tensorflow/tree/main/Classification%20Neural%20Networks/Paddy%20Doctor"
-                                target="_blank" class="button button--flex button--small portfolio__button">
-                                More Details
-                                <i class="uil uil-arrow-right button__icon"></i>
+                                target="_blank" class="github-button button--flex button--small portfolio__button">
+                                Github Repo
+                                <i class="uil uil-github-alt github_icon"></i>
                             </a>
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/eda ipl.png" alt=""
+                            class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Exploratory Data Analysis - IPL</h3>
+                            <p class="portfolio__description">A web app providing in-depth analysis of IPL matches (2008-2022) with interactive visuals, yearly stats, and detailed match insights, built using Python and streamlit.</p>
+                            <a href="https://github.com/ChandrashekharRobbi/Data-Analysis/tree/main/EDA-IPL" target="_blank" class="github-button button--flex button--small portfolio__button">
+                                Github Repo
+                                <i class="uil uil-github-alt github_icon"></i>
+                            </a>
+                            <a href="https://chandrashekharrobbi-eda-ipl.streamlit.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                                Live Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 4 ====================-->
                     <div class="portfolio__content grid swiper-slide">
                         <img src="https://miro.medium.com/max/372/1*AO2rIhzRYzFVQlFLx9DM9A.png" alt=""
                             class="portfolio__img">
@@ -870,33 +1007,36 @@
                             <p class="portfolio__description">To classify a
                                 given image of a handwritten digit into one of 10 classes representing integer values
                                 from 0 to 9, inclusively.</p>
-                            <a href="https://github.com/ChandrashekharRobbi/Convolutional-Neural-Network-with-Tensorflow/tree/main/Classification%20Neural%20Networks/MNIST%20Digit%20Classifier"
-                                target="_blank" class="button button--flex button--small portfolio__button">
-                                More Details
+                            <a href="https://github.com/ChandrashekharRobbi/Convolutional-Neural-Network-with-Tensorflow/tree/main/Classification%20Neural%20Networks/MNIST%20Digit%20Classifier" target="_blank" class="github-button button--flex button--small portfolio__button">
+                                Github Repo
+                                <i class="uil uil-github-alt github_icon"></i>
+                            </a>
+                            <a href="https://huggingface.co/spaces/crobbi/MNIST-Digit-Classifier" target="_blank" class="button button--flex button--small portfolio__button">
+                                Live Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
-                    <!--==================== PORTFOLIO 4 ====================-->
+                    <!--==================== PORTFOLIO 5 ====================-->
                     <div class="portfolio__content grid swiper-slide">
                         <img src="https://user-images.githubusercontent.com/91750738/218270155-6b52428c-7e51-49b9-a4eb-26a050a6fc42.png"
                             alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Covid Dashboard</h3>
-                            <p class="portfolio__description">Utilized HTML CSS JavaScript to construct the website
-                                Covid
-                                API to get the information and furthermore utilized the charts with the
-                                goal that client can figure out in a more legitimate and simple manner
-
+                            <p class="portfolio__description">My first web project, built from scratch, displays a worldwide dashboard with up-to-date COVID-19 stats, safety tips, and vaccine info. Dive in to stay informed.
                             </p>
-                            <a href="https://github.com/ChandrashekharRobbi/covid19" target="_blank"
-                                class="button button--flex button--small portfolio__button">
-                                More Details
+                            <a href="https://github.com/ChandrashekharRobbi/covid19" target="_blank" class="github-button button--flex button--small portfolio__button">
+                                Github Repo
+                                <i class="uil uil-github-alt github_icon"></i>
+                            </a>
+                            <a href="https://chandrashekharrobbi.github.io/covid19/" target="_blank" class="button button--flex button--small portfolio__button">
+                                Live Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
+                    
 
 
 
@@ -1142,7 +1282,6 @@
             document.getElementById("myform").reset();
         });
     </script>
-
 </body>
 
 </html>
