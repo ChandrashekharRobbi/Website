@@ -652,11 +652,14 @@ img {
 }
 
 .skills__flask{
-    width: 30%;
+    width: 70%;
+}
+.skills__cjava{
+    width: 70%;
 }
 
 .skills__django{
-    width: 30%;
+    width: 70%;
 }
 
 .skills__numpy{
