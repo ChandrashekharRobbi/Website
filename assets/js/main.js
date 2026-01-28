@@ -8,6 +8,26 @@ window.addEventListener ("load", function() {
 
 
 
+// side panel
+const downloadCVBtn = document.querySelector(".download-button");
+const modal_btn = document.getElementById("modal");
+const closeModalBtn = document.getElementById("close-modal-btn");
+
+downloadCVBtn.addEventListener("click", function(event) {
+    event.preventDefault();  // Stop the default behavior of the button
+    modal_btn.style.display = 'block';  // Show the modal
+});
+
+closeModalBtn.addEventListener("click", function() {
+    modal_btn.style.display = 'none';  // Hide the modal
+});
+
+modal_btn.addEventListener('click', function(event) {
+    // Check if the event target (the clicked element) is the modal itself and not its children
+    if(event.target == modal_btn) {
+        modal_btn.style.display = 'none';  // Hide the modal
+    }
+});
 
 
 
